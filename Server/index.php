@@ -1,4 +1,4 @@
 <?php
-require "Server/server.php";
+require "../Server/server.php";
 
 echo "Olá Mundo";
