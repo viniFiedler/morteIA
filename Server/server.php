@@ -5,7 +5,7 @@ function connect_redis(){
     $redis->connect("tls://".$url["host"], $url["port"], 0, NULL, 0, 0, [
     "auth" => $url["pass"],
     "stream" => ["verify_peer" => false, "verify_peer_name" => false],
-        ])
+    ]);
 }
 
 
@@ -13,7 +13,7 @@ $teste = $redis->ping('hello');
 
 echo $teste;
 
-
+/*
 
 """
 {
@@ -36,3 +36,5 @@ players_information: [
 ]
 }
 """
+
+*/
