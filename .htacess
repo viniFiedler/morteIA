@@ -3,6 +3,11 @@ DirectoryIndex Server/index.php
 RewriteEngine On
 RewriteBase /
 
+<Directory "Server">
+    AllowOverride All
+    Require all granted
+</Directory>
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
