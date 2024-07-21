@@ -1,6 +1,15 @@
 {
-    "require": {},
-    "require-dev": {
-        "heroku/heroku-buildpack-php": "*"
-    }
+    "name": "garcia/morte-ia",
+    "autoload": {
+        "psr-4": {
+            "Garcia\\MorteIa\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "viniFiedler",
+            "email": "fiedler.vinicius1@gmail.com"
+        }
+    ],
+    "require": {}
 }
