@@ -7,12 +7,6 @@ function connect_redis(){
     "stream" => ["verify_peer" => false, "verify_peer_name" => false],
     ]);
 }
-
-
-$teste = $redis->ping('hello');
-
-echo $teste;
-
 /*
 
 """
