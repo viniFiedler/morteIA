@@ -85,11 +85,45 @@ class RedisManager
     }
 }
 
+$teste = new RedisManager;
+$teste->connect();
+
+$id_sala = 'sda123412321';
+$number_users = 10;
+$game_phase = "waiting";
+$game_prompt = 'Qual é o prompt';
+$name = "potriks";
+$input = "Nao sei";
+$return_message = "entao vsf";
+
+$players_information = array(
+    array(
+        'name' => $name,
+        'input' => $input,
+        'return_message' => $return_message
+    ),
+    array(
+        'name' => $name . "2",
+        'input' => $input,
+        'return_message' => $return_message
+    )
+);
+$data_example = array(
+    'number_users' => $number_users,
+    'game_information' => array(
+        'game_phase' => $game_phase,
+        'game_prompt' => $game_prompt
+    ),
+    'players_information' => $players_information
+);
+
+$teste->insert_redis($id_sala, $data_example);
+echo $teste->get_redis('sda123412321', $number_users);
 /*
 
 """
+id : 'Idunico sala'
 {
-id : 'Idunico sala',
 number_users : numero_de_jogadores,
 game_information : [
     game_phase : 'situacao blablabla'
