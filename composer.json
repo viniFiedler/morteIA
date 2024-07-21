@@ -15,5 +15,7 @@
             "email": "nathancampolina.r@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "ext-redis": "*"
+    }
 }
